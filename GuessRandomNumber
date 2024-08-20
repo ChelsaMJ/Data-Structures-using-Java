@@ -1,0 +1,29 @@
+import java.util.Scanner;
+import java.util.Random;
+
+class Num{
+public static void main(String[] args) {
+
+
+    Random rando = new Random();
+    int randnum = rando.nextInt(100);
+
+
+    System.out.print("Enter ur best guess: ");
+
+    int guess = 0;
+
+while(guess!=randnum) {
+
+    Scanner scan = new Scanner(System.in);
+    guess = scan.nextInt();
+
+    if (guess == randnum) {
+        System.out.println("FINALLY SLOWPOKE.");
+    } else if (guess > randnum) {
+        System.out.println("Guess LOWER.");
+    } else {
+        System.out.println("Guess HIGHER.");
+    }
+}
+        }}
